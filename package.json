@@ -1,0 +1,17 @@
+{
+  "name": "baixar-curso",
+  "version": "1.0.0",
+  "description": "Downloader de vídeos do Telegram utilizando GramJS",
+  "license": "ISC",
+  "author": "Ederson",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "input": "^1.0.1",
+    "telegram": "^2.26.22"
+  }
+}
