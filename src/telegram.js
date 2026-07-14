@@ -3,7 +3,7 @@ import { StringSession } from "telegram/sessions/index.js";
 
 import input from "input";
 
-import { config } from "./config.js";
+import { config } from ".config/config.js";
 
 import { carregarSessao, salvarSessao } from "./session.js";
 

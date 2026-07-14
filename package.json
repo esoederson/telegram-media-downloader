@@ -1,5 +1,5 @@
 {
-  "name": "baixar-curso",
+  "name": "telegram-media-downloader",
   "version": "1.0.0",
   "description": "Downloader de vídeos do Telegram utilizando GramJS",
   "license": "ISC",
@@ -13,5 +13,9 @@
     "dotenv": "^17.4.2",
     "input": "^1.0.1",
     "telegram": "^2.26.22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
   }
 }
