@@ -24,7 +24,7 @@
 
   "include": [
     "src/**/*.ts"
-, "src/session.js", "src/config/config.js", "src/config/config.js"  ],
+, "src/infrastructure/telegram/session.js", "src/config/config.js", "src/config/config.js"  ],
 
   "exclude": [
     "node_modules",
