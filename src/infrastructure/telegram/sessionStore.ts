@@ -11,7 +11,7 @@ if (!fs.existsSync(SESSION_DIR)) {
   });
 }
 
-export function carregarSessao() {
+export function carregarSessao(): string {
   if (!fs.existsSync(SESSION_FILE)) {
     return "";
   }
@@ -19,6 +19,6 @@ export function carregarSessao() {
   return fs.readFileSync(SESSION_FILE, "utf8");
 }
 
-export function salvarSessao(sessao) {
+export function salvarSessao(sessao: string): void {
   fs.writeFileSync(SESSION_FILE, sessao, "utf8");
 }
