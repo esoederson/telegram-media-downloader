@@ -7,16 +7,18 @@ async function main(): Promise<void> {
 
   const autorizado = await telegram.isAuthorized();
 
-  console.log("Usuário autorizado:", autorizado);
-
   if (!autorizado) {
-    console.log("Nenhuma sessão Telegram autenticada.");
+    console.log("Usuário não autorizado.");
     return;
   }
 
-  const usuario = await telegram.getMe();
+  const dialogos = await telegram.getDialogs();
 
-  console.log(usuario);
+  console.log(`Total de conversas: ${dialogos.length}`);
+
+  for (const dialogo of dialogos) {
+    console.log(dialogo.name);
+  }
 }
 
 main();

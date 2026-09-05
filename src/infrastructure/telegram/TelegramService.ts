@@ -58,6 +58,10 @@ export class TelegramService {
     return await this.client.isUserAuthorized();
   }
 
+  async getDialogs() {
+    return await this.client.getDialogs({});
+  }
+
   async getMe() {
     return await this.client.getMe();
   }
